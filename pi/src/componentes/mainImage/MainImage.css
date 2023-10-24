@@ -1,0 +1,35 @@
+.imagemInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 4px blue;
+}
+
+.imagemInput img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+}
+
+.imagemShop {
+    display: flex;
+    padding: 10px;
+    max-width: 10%;
+    flex-direction: column;
+    border: solid 4px blue;
+}
+
+.play {
+    flex-direction: row!important;
+}
+
+.play div {
+    font-size: 10px;
+    text-align: center;
+}
+
+.play img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+}
