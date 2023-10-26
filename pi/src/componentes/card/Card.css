@@ -1,0 +1,61 @@
+.inputCard {
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+    border: solid 4px blue; 
+}
+
+.inputCard img {
+    max-width: 100px;
+    height: auto;
+    border: solid 4px blue; 
+}
+
+.cardText {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 0 27px;
+}
+
+.imagemInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 4px blue; */
+}
+
+.imagemInput img {
+    max-width: 20%;
+    height: auto;
+}
+
+.imagemShop {
+    display: flex;
+    max-width: 15%;
+    flex-direction: column;
+}
+
+.play {
+    display: flex;
+    flex-direction: row!important;
+}
+
+.play div {
+    font-size: 10px;
+    text-align: center;
+}
+
+.play img {
+    max-width: 13%;
+    height: auto;
+}
+
+.products {
+    margin: 50px;
+    font-size: 60px;
+    color: rgba(206,200,206,255);
+    display: flex;
+    justify-content: center;
+}
+
