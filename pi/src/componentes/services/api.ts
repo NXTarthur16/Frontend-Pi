@@ -1,13 +1,12 @@
 import React from "react";
 import axios from "axios";
 
-async function getSalesperson(divId: HTMLDivElement){
-    const salesPersonUrl = "http://localhost:8080/api/vendedor";
+async function getSales(divId: HTMLDivElement){
+    const salesUrl = "http://localhost:8080/api/vendas";
 
-    await axios.get(salesPersonUrl)
+    await axios.get(salesUrl)
     .then((response) => {
-        const dataSalesPerson: Record<string, {name: string, lastName: string,
-            phoneNumber: string, cpf: string, email: string, address: string}> = 
+        const dataSales: Record<string, {image: String, titulo: String, subtitulo: String}> = 
             response.data;
 
             // name vai conter a url da imagem
@@ -15,34 +14,25 @@ async function getSalesperson(divId: HTMLDivElement){
             // phoneNumber vai conter o subtitulo
             // ...
 
-            const dataSalesPersonArray = Object.entries(dataSalesPerson).map(
+            const dataSalesArray = Object.entries(dataSales).map(
                 ([key, value]) => ({
                     key,
                     ...value
                 }));
 
                 var content ="";
-                console.log(dataSalesPerson)
-                dataSalesPersonArray.forEach((dados) => {
+                console.log(dataSales)
+                dataSalesArray.forEach((dados) => {
                 content += `
-                <div class"cards">
-                   <div class="imagemInput">
-                        <img src=${dados.name} alt="error"></img>
-                    <div class="imagemShop">
-                        <h4>Celular teste 1</h4>
-                    <div class="play">
-                        <img src=${dados.lastName} alt="error"/>
-                        <div>shop store</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products">Produtos</div>
-                    <div class="inputInCard">
+                    <div class="inputCard">
                         <div class="cardImg">
-                            <img src=${dados.phoneNumber} alt=""/>
+                            <img src=${dados.image} alt=""/>
                         </div>
-                        <div class="cardText">
-                            Celular teste 2
+                        <div class="cardTitulo">
+                            ${dados.titulo}
+                        </div>
+                        <div class="cardSubtitulo">
+                            ${dados.subtitulo}
                         </div>
                     </div>
                 </div>
@@ -55,8 +45,8 @@ async function getSalesperson(divId: HTMLDivElement){
     })
 }
 
-function postSalesperson(){
+function postSales(){
     console.log("teste")
 }
 
-export default { getSalesperson, postSalesperson }
+export default { getSales, postSales }

@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import "./Card.css";
-import getSalesperson from '../../componentes/services/api';
+import getSales from '../../componentes/services/api';
 
 function Card(){
     useEffect(() => {
         var divId = document.getElementById("mainCard") as HTMLDivElement;
         console.log("divId dentro do componente: ", divId);
-        getSalesperson.getSalesperson(divId);
+        getSales.getSales(divId);
     }, [])
 
     return (

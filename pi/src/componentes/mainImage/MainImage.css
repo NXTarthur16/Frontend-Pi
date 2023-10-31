@@ -1,0 +1,41 @@
+.imagemShop {
+    display: flex;
+    max-width: 15%;
+    flex-direction: column;
+}
+
+.play {
+    display: flex;
+    flex-direction: row!important;
+}
+
+.play div {
+    font-size: 10px;
+    text-align: center;
+}
+
+.play img {
+    max-width: 18px!important;
+    height: auto!important;
+    /* border: solid 4px blue; */
+}
+
+.products {
+    margin: 50px;
+    font-size: 60px;
+    color: rgba(206,200,206,255);
+    display: flex;
+    justify-content: center;
+}
+
+.imagemInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 4px blue; */
+}
+
+.imagemInput img {
+    max-width: 20%;
+    height: auto;
+}
