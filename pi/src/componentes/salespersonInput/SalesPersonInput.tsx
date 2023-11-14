@@ -1,5 +1,4 @@
 import React from 'react';
-import "./SalesPersonInput.css";
 import axios from 'axios';
 import Navbar from '../navbar/Navbar';
 
@@ -40,29 +39,26 @@ function SalesPersonInput(){
         <>
         <Navbar/>
         <div className="SalesPersonInputMain">
+            {/* div */}
             <div className="SalesPersonInputBody">
-                <label>Nome: </label>
-                <input type = "text" id = "salesPersonName"/>
+                <input type = "text" placeholder = "Nome" id = "salesPersonName"/>
             </div>
             <div className="SalesPersonInputBody">
-                <label>Sobrenome: </label>
-                <input type = "text" id = "salesPersonLastName"/>
+                <input type = "text" placeholder = "Sobrenome" id = "salesPersonLastName"/>
             </div>
             <div className="SalesPersonInputBody">
-                <label>Número de telefone: </label>
-                <input type = "text" id = "salesPersonPhoneNumber"/>
+                <input type = "text" placeholder = "Endereço Completo" id = "salesPersonAddress"/>
             </div>
             <div className="SalesPersonInputBody">
-                <label>Endereço: </label>
-                <input type = "text" id = "salesPersonAddress"/>
+                <input type = "text" placeholder = "Email" id = "salesPersonEmail"/>
             </div>
-            <div className="SalesPersonInputBody">
-                <label>Email: </label>
-                <input type = "text" id = "salesPersonEmail"/>
+            <div className="SalesPersonInputLabel">
+                <label>Número de Telefone:</label>
+                <input type = "text" placeholder = "00 00000000000" id = "salesPersonPhoneNumber"/>
             </div>
-            <div className="SalesPersonInputBody">
-                <label>CPF: </label>
-                <input type = "text" id = "salesPersonCpf"/>
+            <div className="SalesPersonInputLabel">
+                <label>CPF:</label>
+                <input type = "text" placeholder = "000.000.000-00" id = "salesPersonCpf"/>
             </div>
             <button type = "submit" id="sendBtnPost" onClick={SalesPersonDataPost}>Post</button>
         </div>

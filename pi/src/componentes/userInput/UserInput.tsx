@@ -4,7 +4,7 @@ import Navbar from "../navbar/Navbar";
 
 async function UserDataPost(){
 
-    var userNameInput = document.getElementById("userName")  as HTMLInputElement || null;
+    var userNomeInput = document.getElementById("userNome")  as HTMLInputElement || null;
     var userLastNameInput = document.getElementById("userLastName")  as HTMLInputElement || null;
     var userPhoneNumberInput = document.getElementById("userPhoneNumber")  as HTMLInputElement || null;
     var userAddressInput = document.getElementById("userAddress") as HTMLInputElement || null;
@@ -14,7 +14,7 @@ async function UserDataPost(){
 
     var userDataJson = {
 
-        "name": userNameInput.value.toString(),
+        "nome": userNomeInput.value.toString(),
         "lastName": userLastNameInput.value.toString(),
         "phoneNumber": userPhoneNumberInput.value.toString(),
         "cpf": userCpfInput.value.toString(),
@@ -41,28 +41,24 @@ function UserInput(){
         <Navbar/>
         <div className="UserInputMain">
             <div className="UserInputBody">
-                <label>Nome: </label>
-                <input type = "text" id = "userName"/>
+                <input type = "text" placeholder = "Nome" id = "userNome"/>
             </div>
             <div className="UserInputBody">
-                <label>Sobrenome: </label>
-                <input type = "text" id = "userLastName"/>
+                <input type = "text" placeholder = "Sobrenome" id = "userLastName"/>
             </div>
             <div className="UserInputBody">
-                <label>Número de telefone: </label>
-                <input type = "text" id = "userPhoneNumber"/>
+                <input type = "text" placeholder = "Endereço Completo" id = "userAddress"/>
             </div>
             <div className="UserInputBody">
-                <label>Endereço: </label>
-                <input type = "text" id = "userAddress"/>
+                <input type = "text" placeholder = "Email" id = "userEmail"/>
             </div>
-            <div className="UserInputBody">
-                <label>Email: </label>
-                <input type = "text" id = "userEmail"/>
+            <div className="UserInputLabel">
+                <label>Número de Telefone:</label>
+                <input type = "text" placeholder = "00 00000000000" id = "userPhoneNumber"/>
             </div>
-            <div className="UserInputBody">
-                <label>CPF: </label>
-                <input type = "text" id = "userCpf"/>
+            <div className="UserInputLabel">
+                <label>CPF:</label>
+                <input type = "text" placeholder = "000.000.000-00" id = "userCpf"/>
             </div>
             
             <button type = "submit" id="sendBtnPost" onClick={UserDataPost}>Post</button>

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around ;
     align-items: center;
+    color: black;
     padding: 10px;
     margin: 10px 0 25px 0;
 }
@@ -13,9 +14,10 @@
 
 .navbarHome {
     background-color: #5889cb;
+    text-decoration: none;
     padding: 2%;
 }
 
-.navbar a {
-    color: black;
+.disableLink {
+    pointer-events: none;
 }

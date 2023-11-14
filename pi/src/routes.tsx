@@ -7,10 +7,10 @@ import SalesPersonInput from './componentes/salespersonInput/SalesPersonInput';
 function MainRoutes(){
     return(
         <Routes>
-            <Route path='/home' element={<Home/>}/>
+            <Route path='/' element={<Home/>}/>
             <Route path='/products' element={<ProductInput/>}/>
             <Route path='/users' element={<Users/>}/>
-            <Route path='/salesperson' element={<SalesPersonInput/>}/>
+            <Route path='/sales' element={<SalesPersonInput/>}/>
         </Routes>
     )
 }

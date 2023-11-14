@@ -42,24 +42,19 @@ function ProductInput(){
                 <input type = "text" placeholder="Nome do Produto" id = "productName"/>
             </div>
             <div className="productInputBody">
-                <label>Preço do Produto</label>
-                <input type = "text" id = "productPrice"/>
+                <input type = "text" placeholder = "Preço do Produto" id = "productPrice"/>
             </div>
             <div className="productInputBody">
-                <label>Cor do Produto</label>
-                <input type = "text" id = "productDescription"/>
+                <input type = "text" placeholder = "Cor do Produto" id = "productColor"/>
             </div>
             <div className="productInputBody">
-                <label>Descrição do Produto</label>
-                <input type = "text" id = "productDescription"/>
+                <input type = "text" placeholder="Descrição do Produto" id = "productDescription"/>
             </div>
             <div className="productInputBody">
-                <label>Quantidade do Produto</label>
-                <input type = "text" id = "productQuantity"/>
+                <input type = "text" placeholder = "Quantidade do Produto" id = "productQuantity"/>
             </div>
             <div className="productInputBody">
-                <label>Foto do Produto</label>
-                <input type = "text" id = "productImg"/>
+                <input type = "text" placeholder = "Link Imagem do Produto" id = "productImg"/>
             </div>
             <button type = "submit" id = "sendBtnPost" onClick={ProductDataPost}>Post</button>
         </div>
