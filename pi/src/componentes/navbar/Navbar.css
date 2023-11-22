@@ -7,12 +7,12 @@
     margin: 10px 0 25px 0;
 }
 
-.navbarChild {
+.disableLink {
     color: black;
     text-decoration: none;
 }
 
-.navbarHome {
+.disableLink {
     background-color: #5889cb;
     text-decoration: none;
     padding: 2%;

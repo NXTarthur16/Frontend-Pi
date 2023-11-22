@@ -23,7 +23,6 @@ async function UserDataPost(){
         
     }
 
-
     await axios.post(salesPersonUrl, userDataJson,
         {
             headers : {

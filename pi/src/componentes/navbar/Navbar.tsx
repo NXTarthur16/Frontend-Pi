@@ -30,7 +30,6 @@ function Navbar(){
 
     return(
         <div className="navbar">
-        
                 {endereco === 'home' ? (<Link to = {'/home'} className = "disableLink">
                     Home
                 </Link>) :
