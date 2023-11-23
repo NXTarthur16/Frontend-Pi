@@ -10,7 +10,7 @@ async function ProductDataPost(){
     var productDescriptionInput = document.getElementById("productDescription") as HTMLInputElement || null;
     var productQuantityInput = document.getElementById("productQuantity") as HTMLInputElement || null;
     var productImgInput = document.getElementById("productImg") as HTMLInputElement || null;
-    var productUrl = "http://localhost:8080/api/produto";
+    var productUrl = "http://localhost:8080/api/products";
 
     var productDataJson = {
 

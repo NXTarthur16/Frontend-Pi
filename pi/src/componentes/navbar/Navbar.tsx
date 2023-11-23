@@ -46,7 +46,7 @@ function Navbar(){
                 (<Link to = '/users' >Cadastro de Usuarios</Link>)}
 
                 {endereco === 'sales' ? (<Link to = {'/sales'} className="disableLink">
-                    Cadastro de Produtos
+                    Cadastro de Vendas
                 </Link>) :
                 (<Link to = '/sales' >Cadastro de Vendas</Link>)}
                 
